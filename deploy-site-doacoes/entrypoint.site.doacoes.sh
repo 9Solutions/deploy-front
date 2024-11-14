@@ -10,10 +10,11 @@ if [ -d "Site-Doacoes/.git" ]; then
     git pull origin $GIT_BRANCH
 else
     echo "Clonando repositório..."
+    npm install react
     git clone -b $GIT_BRANCH $GIT_REPO
     cd "$REPO_DIR"
 fi
 
-nom i
+npm i
 
 npm start
